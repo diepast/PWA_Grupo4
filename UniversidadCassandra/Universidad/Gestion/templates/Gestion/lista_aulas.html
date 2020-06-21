@@ -1,0 +1,23 @@
+{% extends 'Gestion\index.html' %}
+
+{% block content %}
+
+    <h1>Aulas</h1>
+    <table border="1" width="600">
+        <tr>
+            <th><b>Nro</b></th>
+            <td><b>Piso</b></th>
+            <td><b>Cantidad de Alumnos</b></th>
+        </tr>
+
+        {% for aula in ListaAulas %}
+        <tr>
+            <td>{{ aula.nro }}</td>
+            <td>{{ aula.piso }}</td>
+            <td>{{ aula.capacidad }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    <br><br>
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gestion</title>
+  </head>
+  <body>
+<h1>Menú de Gestiones</h1>
+
+  
+    <ul>
+		<li>
+			<a href="{% url 'Gestion:index' %}">Página Principal</a>
+		</li>
+		<li>
+			<a href="{% url 'Gestion:aulas' %}">Nueva Aula</a>
+		</li>
+		<li>
+			<a href="{% url 'Gestion:lista_aulas' %}">Listado de Aulas</a>
+		</li>
+		<li>
+			<a href="{% url 'Gestion:materias' %}">Nueva Materia</a>
+		</li>
+    </ul>
+
+<h2>Contenido Dinámico</h2>
+{% block content %}
+
+
+<p> Página Principal </p>
+
+
+{% endblock %}
+  </body>
+</html>
